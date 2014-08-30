@@ -406,15 +406,10 @@ GtkRecentInfo* cast_GtkRecentInfo(GtkWidget* widget) {
 
 /* specific versions */
 
-#ifdef GTK_3_6
 
 GtkMenuButton* cast_GtkMenuButton(GtkWidget* widget) {
     return GTK_MENU_BUTTON(widget);
 }
-
-#endif
-
-#ifdef GTK_3_10
 
 GtkSearchBar* cast_GtkSearchBar(GtkWidget* widget) {
     return GTK_SEARCH_BAR(widget);
@@ -444,10 +439,6 @@ GtkListBoxRow* cast_GtkListBoxRow(GtkWidget* widget) {
     return GTK_LIST_BOX_ROW(widget);
 }
 
-#endif
-
-#ifdef GTK_3_12
-
 GtkFlowBox* cast_GtkFlowBox(GtkWidget* widget) {
     return GTK_FLOW_BOX(widget);
 }
@@ -459,8 +450,6 @@ GtkFlowBoxChild* cast_GtkFlowBoxChild(GtkWidget* widget) {
 GtkActionBar* cast_GtkActionBar(GtkWidget* widget) {
     return GTK_ACTION_BAR(widget);
 }
-
-#endif
 
 /*GAppInfo* cast_GtkAppInfo(GtkWidget* widget) {
     return G_APP_INFO(widget);
