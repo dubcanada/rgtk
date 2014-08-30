@@ -175,12 +175,12 @@ macro_rules! signal(
             }
 
             //TODO: Rust lexer bug here, can't parse the middel `,` in `|$($arg_type),* , Box<Any>|`
-            /*pub fn new_with_data (user_data: Box<Any>, cb: |$($arg_type),*, Box<Any>|:'a -> $ret_type) -> Box<Signal<'a>> {
+            pub fn new_with_data (user_data: Box<Any>, cb: |$($arg_type),*, Box<Any>|:'a -> $ret_type) -> Box<Signal<'a>> {
                 box $class{
                     cb: cb,
                     user_data: user_data
                 } as Box<Signal<'a>>
-            }*/
+            }
         }
 
         impl<'a> Signal<'a> for $class<'a>{
