@@ -127,18 +127,12 @@ pub use self::widgets::{
     RecentManager
 };
 
-#[cfg(GTK_3_6)]
-#[cfg(GTK_3_8)]
-#[cfg(GTK_3_10)]
-#[cfg(GTK_3_12)]
 /// GTK Widgets for versions since GTK 3.6
 pub use self::widgets::{
     MenuButton,
     LevelBar,
 };
 
-#[cfg(GTK_3_10)]
-#[cfg(GTK_3_12)]
 /// GTK Widgets for versions since GTK 3.10
 pub use self::widgets::{
     SearchEntry,
@@ -151,7 +145,6 @@ pub use self::widgets::{
     ListBoxRow,
 };
 
-#[cfg(GTK_3_12)]
 /// GTK Widgets for versions since GTK 3.12
 pub use self::widgets::{
     FlowBox,
